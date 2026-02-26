@@ -1,13 +1,14 @@
 .PHONY: stow_install
 
-target = $(HOME)/.config
+source = hknlof
+target = $(HOME)
 
-install: fish htop nvim opencode uv zed
-	stow --target=$(target) .
+install:
+	stow --dir=$(source) --target=$(target) .
 
 stow_install:
 	brew install stow
 
 clean:
-	stow --target=$(target) --delete .
+	stow --dir=$(source) --target=$(target) --delete .
 

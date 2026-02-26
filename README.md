@@ -1,3 +1,8 @@
+# Installation / Deletion
+
+```shell
+make install # executes stow on source and target
+```
 # Dotfiles
 
 Might have to check for zed configuration.
