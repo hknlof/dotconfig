@@ -8,6 +8,7 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
   end
 end
 
+print(vim.fn.path)
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
