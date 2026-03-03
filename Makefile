@@ -2,6 +2,7 @@
 
 source = hknlof
 target = $(HOME)
+rust   = skim ripgrep
 
 install:
 	stow --dir=$(source) --target=$(target) .
@@ -12,3 +13,8 @@ stow_install:
 clean:
 	stow --dir=$(source) --target=$(target) --delete .
 
+cargo_install:
+	cargo install $(rust)
+
+cargo_uninstall:
+	cargo uninstall $(rust)
