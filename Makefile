@@ -2,7 +2,7 @@
 
 source = hknlof
 target = $(HOME)
-rust   = skim ripgrep
+rust   = skim ripgrep gitui
 
 install:
 	stow --dir=$(source) --target=$(target) .
